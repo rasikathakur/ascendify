@@ -31,7 +31,7 @@ const App = () => (
               <Route path="/roadmaps" element={<Roadmaps />} />
               <Route path="/assessment" element={<Assessment />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/signin" element={import("./pages/SignIn").then(m=>({default:m.default})) as unknown as React.ReactElement} />
+              <Route path="/signin" element={<SignIn />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
