@@ -58,13 +58,10 @@ export const SuccessStories: React.FC = () => {
               <div className="min-w-0 flex-[0_0_100%] px-4" key={t.name}>
                 <Reveal delay={i * 120}>
                   <article className="relative">
-                    {/* Outer blue container */}
-                    <div className="absolute inset-0 rounded-2xl bg-sky-600" />
-                    {/* Inner lighter container overlapping */}
-                    <div className="relative m-2 rounded-2xl border border-white/10 bg-white/5 p-6">
+                    <div className="rounded-2xl border-2 border-sky-600 bg-white/5 p-6">
                       <p className="text-sm leading-relaxed">{t.quote}</p>
                       <div className="mt-6 flex items-center gap-3">
-                        <div className="grid size-10 place-items-center rounded-full bg-sky-600/40 text-white font-bold">
+                        <div className="grid size-10 place-items-center rounded-full bg-sky-600 text-white font-bold">
                           {t.initial}
                         </div>
                         <div>
