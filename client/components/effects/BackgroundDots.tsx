@@ -35,10 +35,10 @@ export function BackgroundDots({ className, speed = 0.25 }: BackgroundDotsProps)
     >
       {/* Dark base */}
       <div className="absolute inset-0 bg-[#0b1020]" />
-      {/* Blue tiny dot grid */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.35)_1px,transparent_1px)] bg-[length:18px_18px] animate-bg-pan" />
+      {/* Blue tiny dot grid rising upward */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.4)_1px,transparent_1px)] bg-[length:14px_14px] animate-bg-rise" />
       {/* Vignette */}
-      <div className="absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_20%,rgba(0,0,0,0.35),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_20%,rgba(0,0,0,0.45),transparent_60%)]" />
     </div>
   );
 }
