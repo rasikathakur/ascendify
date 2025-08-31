@@ -33,14 +33,14 @@ export const SiteFooter: React.FC = () => {
             </ul>
           </div>
           <div>
-            <div className="font-semibold mb-3">Community</div>
-            <ul className="space-y-2 text-sm text-white/70">
+            <div className="font-semibold mb-3 inline-block border-b-2 border-sky-400 pb-1">Community</div>
+            <ul className="mt-2 space-y-2 text-sm text-white/70">
               <li><a href="#" className="hover:text-white">Mentorship</a></li>
             </ul>
           </div>
           <div>
-            <div className="font-semibold mb-3">Support</div>
-            <ul className="space-y-2 text-sm text-white/70">
+            <div className="font-semibold mb-3 inline-block border-b-2 border-sky-400 pb-1">Support</div>
+            <ul className="mt-2 space-y-2 text-sm text-white/70">
               <li><a href="#" className="hover:text-white">Help Center</a></li>
               <li><Link to="/contact" className="hover:text-white">Contact Us</Link></li>
               <li><a href="#" className="hover:text-white">FAQ</a></li>
@@ -48,8 +48,8 @@ export const SiteFooter: React.FC = () => {
             </ul>
           </div>
           <div>
-            <div className="font-semibold mb-3">Company</div>
-            <ul className="space-y-2 text-sm text-white/70">
+            <div className="font-semibold mb-3 inline-block border-b-2 border-sky-400 pb-1">Company</div>
+            <ul className="mt-2 space-y-2 text-sm text-white/70">
               <li><a href="#" className="hover:text-white">About Us</a></li>
               <li><a href="#" className="hover:text-white">Careers</a></li>
               <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
