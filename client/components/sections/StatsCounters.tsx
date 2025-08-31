@@ -13,11 +13,12 @@ const STATS: Stat[] = [
   { label: "Success Rate", value: 92, suffix: "%" },
 ];
 
-function useCountUp(target: number, start = 0, duration = 1400) {
+function useCountUp(target: number, start = 0, duration = 1600, enabled = true) {
   const [value, setValue] = useState(start);
   const ref = useRef<number>(start);
 
   useEffect(() => {
+    if (!enabled) return;
     const startTs = performance.now();
     let raf = 0;
     const step = (ts: number) => {
@@ -32,14 +33,14 @@ function useCountUp(target: number, start = 0, duration = 1400) {
     };
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
-  }, [target, start, duration]);
+  }, [target, start, duration, enabled]);
 
   return value;
 }
 
 export const StatsCounters: React.FC = () => {
   return (
-    <section className="py-16 bg-sky-600 dark:bg-sky-700">
+    <section className="py-16 bg-sky-100 dark:bg-sky-900/40">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
           {STATS.map((s, i) => (
@@ -54,10 +55,26 @@ export const StatsCounters: React.FC = () => {
 };
 
 function Counter({ stat }: { stat: Stat }) {
-  const value = useCountUp(stat.value);
+  const [visible, setVisible] = useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          setVisible(true);
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  const value = useCountUp(stat.value, 0, 1600, visible);
   return (
-    <div>
-      <div className="text-4xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-[0_0_22px_rgba(255,255,255,0.9)] dark:text-slate-900 dark:drop-shadow-[0_0_28px_rgba(255,255,255,0.75)]">
+    <div ref={ref}>
+      <div className="text-4xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-[0_0_22px_rgba(56,189,248,0.9)] dark:text-slate-900 dark:drop-shadow-[0_0_28px_rgba(255,255,255,0.75)]">
         {value.toLocaleString()} {stat.suffix ?? ""}
       </div>
       <div className="mt-2 text-sm text-white dark:text-slate-900">{stat.label}</div>
