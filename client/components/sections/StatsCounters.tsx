@@ -40,7 +40,7 @@ function useCountUp(target: number, start = 0, duration = 1600, enabled = true) 
 
 export const StatsCounters: React.FC = () => {
   return (
-    <section className="py-16 bg-sky-100 dark:bg-sky-900/40">
+    <section className="py-16 bg-[#009EC7] dark:bg-[#009EC7]">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
           {STATS.map((s, i) => (
