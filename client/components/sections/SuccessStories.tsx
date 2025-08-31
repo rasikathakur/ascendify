@@ -30,7 +30,10 @@ import { useEffect, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const SuccessStories: React.FC = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    align: "center",
+  });
   const [selected, setSelected] = useState(0);
 
   const onSelect = useCallback(() => {
@@ -47,8 +50,12 @@ export const SuccessStories: React.FC = () => {
   return (
     <section className="container py-20">
       <Reveal>
-        <h2 className="text-center text-3xl md:text-4xl font-extrabold tracking-tight">Success Stories</h2>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">Real people, real career transformations</p>
+        <h2 className="text-center text-3xl md:text-4xl font-extrabold tracking-tight">
+          Success Stories
+        </h2>
+        <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
+          Real people, real career transformations
+        </p>
       </Reveal>
 
       <div className="mt-10">
@@ -66,7 +73,9 @@ export const SuccessStories: React.FC = () => {
                         </div>
                         <div>
                           <div className="font-semibold">{t.name}</div>
-                          <div className="text-xs text-muted-foreground">{t.role}</div>
+                          <div className="text-xs text-muted-foreground">
+                            {t.role}
+                          </div>
                         </div>
                       </div>
                     </div>

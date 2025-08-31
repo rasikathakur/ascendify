@@ -7,7 +7,10 @@ interface BackgroundDotsProps {
 }
 
 // Animated dotted background using CSS radial-gradient grid and slow panning.
-export function BackgroundDots({ className, speed = 0.25 }: BackgroundDotsProps) {
+export function BackgroundDots({
+  className,
+  speed = 0.25,
+}: BackgroundDotsProps) {
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {

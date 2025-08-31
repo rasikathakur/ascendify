@@ -38,7 +38,8 @@ export const Hero: React.FC = () => {
           Ascendify – Elevate your skills, amplify your career.
         </h1>
         <p className="mt-5 max-w-2xl text-muted-foreground text-base md:text-lg">
-          Discover your path. Build your skills. Land your dream role with AI-powered guidance.
+          Discover your path. Build your skills. Land your dream role with
+          AI-powered guidance.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center gap-3">
           <Button

@@ -13,7 +13,12 @@ const STATS: Stat[] = [
   { label: "Success Rate", value: 92, suffix: "%" },
 ];
 
-function useCountUp(target: number, start = 0, duration = 1600, enabled = true) {
+function useCountUp(
+  target: number,
+  start = 0,
+  duration = 1600,
+  enabled = true,
+) {
   const [value, setValue] = useState(start);
   const ref = useRef<number>(start);
 
@@ -60,14 +65,17 @@ function Counter({ stat }: { stat: Stat }) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          setVisible(true);
-          io.disconnect();
-        }
-      });
-    }, { threshold: 0.3 });
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            setVisible(true);
+            io.disconnect();
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
     io.observe(el);
     return () => io.disconnect();
   }, []);
@@ -77,7 +85,9 @@ function Counter({ stat }: { stat: Stat }) {
       <div className="text-4xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-[0_0_22px_rgba(56,189,248,0.9)] dark:text-slate-900 dark:drop-shadow-[0_0_28px_rgba(255,255,255,0.75)]">
         {value.toLocaleString()} {stat.suffix ?? ""}
       </div>
-      <div className="mt-2 text-sm text-white dark:text-slate-900">{stat.label}</div>
+      <div className="mt-2 text-sm text-white dark:text-slate-900">
+        {stat.label}
+      </div>
     </div>
   );
 }
