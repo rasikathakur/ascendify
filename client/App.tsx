@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
+import BackgroundDots from "@/components/effects/BackgroundDots";
 
 const queryClient = new QueryClient();
 
