@@ -41,10 +41,20 @@ export const Hero: React.FC = () => {
           Discover your path. Build your skills. Land your dream role with AI-powered guidance.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row items-center gap-3">
-          <Button asChild size="lg" variant="gradient" className="shadow-neon">
+          <Button
+            asChild
+            size="lg"
+            variant="gradient"
+            className="shadow-neon rounded-full border-2 border-sky-400/60 text-white px-8 py-6"
+          >
             <Link to="/assessment">Start Free Career Assessment</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className="border-cyan-400/30">
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="rounded-full border-2 border-sky-500/60 text-sky-400 px-8 py-6 bg-transparent"
+          >
             <Link to="/roadmaps">Explore Skill Roadmaps</Link>
           </Button>
         </div>
