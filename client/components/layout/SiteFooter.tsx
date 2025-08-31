@@ -26,8 +26,8 @@ export const SiteFooter: React.FC = () => {
         </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="font-semibold mb-3">Learning</div>
-            <ul className="space-y-2 text-sm text-white/70">
+            <div className="font-semibold mb-3 inline-block border-b-2 border-sky-400 pb-1">Learning</div>
+            <ul className="mt-2 space-y-2 text-sm text-white/70">
               <li><Link to="/roadmaps" className="hover:text-white">Skill Roadmaps</Link></li>
               <li><Link to="/assessment" className="hover:text-white">Career Assessment</Link></li>
             </ul>
