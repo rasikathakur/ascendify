@@ -56,11 +56,11 @@ export const StatsCounters: React.FC = () => {
 function CounterCard({ stat }: { stat: Stat }) {
   const value = useCountUp(stat.value);
   return (
-    <div className="rounded-xl border border-border/60 bg-card/60 p-6 text-center shadow-sm">
-      <div className="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-300 via-sky-400 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(56,189,248,0.45)]">
+    <div className="rounded-xl bg-white/5 border border-white/10 p-6 text-center shadow-sm">
+      <div className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
         {value.toLocaleString()} {stat.suffix ?? ""}
       </div>
-      <div className="mt-2 text-sm text-muted-foreground">{stat.label}</div>
+      <div className="mt-2 text-sm text-white/80">{stat.label}</div>
     </div>
   );
 }
