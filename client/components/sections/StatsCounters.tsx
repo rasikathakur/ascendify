@@ -39,7 +39,7 @@ function useCountUp(target: number, start = 0, duration = 1400) {
 
 export const StatsCounters: React.FC = () => {
   return (
-    <section className="py-16 bg-sky-900/80">
+    <section className="py-16 bg-gradient-to-r from-sky-900 via-sky-800 to-cyan-900">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {STATS.map((s, i) => (
@@ -56,11 +56,11 @@ export const StatsCounters: React.FC = () => {
 function CounterCard({ stat }: { stat: Stat }) {
   const value = useCountUp(stat.value);
   return (
-    <div className="rounded-xl bg-white/5 border border-white/10 p-6 text-center shadow-sm">
-      <div className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+    <div className="rounded-xl bg-white/10/50 backdrop-blur border border-sky-500/40 p-6 text-center shadow-[0_0_24px_rgba(56,189,248,0.15)]">
+      <div className="text-4xl md:text-5xl font-black tracking-tight text-sky-100">
         {value.toLocaleString()} {stat.suffix ?? ""}
       </div>
-      <div className="mt-2 text-sm text-white/80">{stat.label}</div>
+      <div className="mt-2 text-sm text-sky-100/80">{stat.label}</div>
     </div>
   );
 }
