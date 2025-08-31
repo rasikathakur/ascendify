@@ -49,4 +49,12 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+declare global { interface Window { __fusionRoot?: Root } }
+
+const container = document.getElementById("root")!;
+let root = window.__fusionRoot;
+if (!root) {
+  root = createRoot(container);
+  window.__fusionRoot = root;
+}
+root.render(<App />);
