@@ -39,13 +39,15 @@ function useCountUp(target: number, start = 0, duration = 1400) {
 
 export const StatsCounters: React.FC = () => {
   return (
-    <section className="container py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        {STATS.map((s, i) => (
-          <Reveal key={s.label} delay={i * 120}>
-            <CounterCard stat={s} />
-          </Reveal>
-        ))}
+    <section className="py-16 bg-sky-900/80">
+      <div className="container">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          {STATS.map((s, i) => (
+            <Reveal key={s.label} delay={i * 120}>
+              <CounterCard stat={s} />
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
