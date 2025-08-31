@@ -26,9 +26,24 @@ const testimonials = [
 ];
 
 import useEmblaCarousel from "embla-carousel-react";
+import { useEffect, useState, useCallback } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export const SuccessStories: React.FC = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true, align: "center" });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
+  const [selected, setSelected] = useState(0);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelected(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
+    onSelect();
+  }, [emblaApi, onSelect]);
+
   return (
     <section className="container py-20">
       <Reveal>
@@ -43,8 +58,10 @@ export const SuccessStories: React.FC = () => {
               <div className="min-w-0 flex-[0_0_100%] px-4" key={t.name}>
                 <Reveal delay={i * 120}>
                   <article className="relative">
-                    <div className="absolute inset-0 translate-x-2 translate-y-2 rounded-2xl bg-sky-600/25" />
-                    <div className="relative rounded-2xl border border-white/10 bg-white/[0.05] p-6">
+                    {/* Outer blue container */}
+                    <div className="absolute inset-0 rounded-2xl bg-sky-600" />
+                    {/* Inner lighter container overlapping */}
+                    <div className="relative m-2 rounded-2xl border border-white/10 bg-white/5 p-6">
                       <p className="text-sm leading-relaxed">{t.quote}</p>
                       <div className="mt-6 flex items-center gap-3">
                         <div className="grid size-10 place-items-center rounded-full bg-sky-600/40 text-white font-bold">
@@ -63,11 +80,31 @@ export const SuccessStories: React.FC = () => {
           </div>
         </div>
         {/* Controls */}
-        <div className="mt-6 flex justify-center gap-3">
-          {/* Simple anchors for now; embla supports API, but minimal UI */}
-          {testimonials.map((_, i) => (
-            <span key={i} className="size-2 rounded-full bg-sky-500/40 inline-block" />
-          ))}
+        <div className="mt-6 flex items-center justify-center gap-4">
+          <button
+            aria-label="Previous"
+            onClick={() => emblaApi?.scrollPrev()}
+            className="p-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10"
+          >
+            <ChevronLeft className="size-5" />
+          </button>
+          <div className="flex gap-2">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                aria-label={`Go to slide ${i + 1}`}
+                onClick={() => emblaApi?.scrollTo(i)}
+                className={`size-2 rounded-full ${selected === i ? "bg-sky-500" : "bg-sky-500/40"}`}
+              />
+            ))}
+          </div>
+          <button
+            aria-label="Next"
+            onClick={() => emblaApi?.scrollNext()}
+            className="p-2 rounded-full bg-white/5 hover:bg-white/10 border border-white/10"
+          >
+            <ChevronRight className="size-5" />
+          </button>
         </div>
       </div>
     </section>
