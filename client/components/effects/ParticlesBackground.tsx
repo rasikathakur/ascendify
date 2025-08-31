@@ -4,7 +4,11 @@ import React, { useEffect, useRef } from "react";
  * Particle background animation based on user-provided vanilla JS.
  * Renders tiny glowing blue particles ascending vertically with varied speeds.
  */
-export default function ParticlesBackground({ count = 70 }: { count?: number }) {
+export default function ParticlesBackground({
+  count = 70,
+}: {
+  count?: number;
+}) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const styleRef = useRef<HTMLStyleElement | null>(null);
 
@@ -63,5 +67,12 @@ export default function ParticlesBackground({ count = 70 }: { count?: number }) 
     };
   }, [count]);
 
-  return <div id="background-animations" ref={containerRef} className="pointer-events-none absolute inset-0 -z-10" aria-hidden />;
+  return (
+    <div
+      id="background-animations"
+      ref={containerRef}
+      className="pointer-events-none absolute inset-0 -z-10"
+      aria-hidden
+    />
+  );
 }
