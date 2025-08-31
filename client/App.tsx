@@ -28,6 +28,7 @@ const App = () => (
         <div className="relative min-h-screen flex flex-col bg-background text-foreground">
           <div className="absolute inset-0 -z-10">
             <BackgroundDots />
+            <ParticlesBackground />
           </div>
           <SiteHeader />
           <div className="flex-1">
