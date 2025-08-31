@@ -39,12 +39,12 @@ function useCountUp(target: number, start = 0, duration = 1400) {
 
 export const StatsCounters: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-sky-900 via-sky-800 to-cyan-900">
+    <section className="py-16 bg-sky-600 dark:bg-sky-700">
       <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center">
           {STATS.map((s, i) => (
             <Reveal key={s.label} delay={i * 120}>
-              <CounterCard stat={s} />
+              <Counter stat={s} />
             </Reveal>
           ))}
         </div>
@@ -53,14 +53,14 @@ export const StatsCounters: React.FC = () => {
   );
 };
 
-function CounterCard({ stat }: { stat: Stat }) {
+function Counter({ stat }: { stat: Stat }) {
   const value = useCountUp(stat.value);
   return (
-    <div className="rounded-xl bg-white/10/50 backdrop-blur border border-sky-500/40 p-6 text-center shadow-[0_0_24px_rgba(56,189,248,0.15)]">
-      <div className="text-4xl md:text-5xl font-black tracking-tight text-sky-100">
+    <div>
+      <div className="text-4xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-[0_0_22px_rgba(255,255,255,0.9)] dark:text-slate-900 dark:drop-shadow-[0_0_28px_rgba(255,255,255,0.75)]">
         {value.toLocaleString()} {stat.suffix ?? ""}
       </div>
-      <div className="mt-2 text-sm text-sky-100/80">{stat.label}</div>
+      <div className="mt-2 text-sm text-white dark:text-slate-900">{stat.label}</div>
     </div>
   );
 }
