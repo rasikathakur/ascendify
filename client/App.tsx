@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import Roadmaps from "./pages/Roadmaps";
 import Assessment from "./pages/Assessment";
 import Contact from "./pages/Contact";
+import SignIn from "./pages/SignIn";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 
