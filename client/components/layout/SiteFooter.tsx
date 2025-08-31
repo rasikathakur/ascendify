@@ -13,7 +13,13 @@ export const SiteFooter: React.FC = () => {
     <footer className="border-t border-border/50 bg-[#0b1020] text-white/90">
       <div className="container py-12">
         <div className="mb-10">
-          <div className="font-extrabold text-xl text-sky-400">Ascendify</div>
+          <div className="flex items-center gap-2 font-extrabold text-xl text-sky-400">
+            <svg aria-hidden viewBox="0 0 48 24" className="h-5 w-9 fill-current">
+              <path d="M12 12c0-4 3-7 7-7 3 0 5 2 7 4s4 4 7 4 7-3 7-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              <path d="M36 12c0 4-3 7-7 7-3 0-5-2-7-4s-4-4-7-4-7 3-7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+            Ascendify
+          </div>
           <p className="text-sm text-white/70 mt-3 max-w-xl">
             Elevating careers through AI-powered skill development and personalized guidance.
           </p>
