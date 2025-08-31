@@ -16,8 +16,12 @@ export const SiteHeader: React.FC = () => {
   return (
     <header className="sticky top-0 z-30 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border/50">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="font-extrabold text-xl tracking-tight">
-          <span className="bg-gradient-to-r from-cyan-400 via-sky-400 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.55)]">Ascendify</span>
+        <Link to="/" className="font-extrabold text-xl tracking-tight flex items-center gap-2">
+          <svg aria-hidden viewBox="0 0 48 24" className="h-5 w-9 text-sky-400 fill-current">
+            <path d="M12 12c0-4 3-7 7-7 3 0 5 2 7 4s4 4 7 4 7-3 7-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            <path d="M36 12c0 4-3 7-7 7-3 0-5-2-7-4s-4-4-7-4-7 3-7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          </svg>
+          <span className="text-sky-400">Ascendify</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
@@ -30,8 +34,8 @@ export const SiteHeader: React.FC = () => {
                 className={cn(
                   "px-3 py-2 rounded-md text-sm font-medium transition-colors",
                   active
-                    ? "text-foreground bg-accent/40"
-                    : "text-foreground/70 hover:text-foreground hover:bg-accent/30",
+                    ? "text-sky-400 bg-sky-400/10"
+                    : "text-foreground/70 hover:text-foreground hover:bg-sky-400/10",
                 )}
               >
                 {item.label}

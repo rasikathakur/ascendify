@@ -55,9 +55,12 @@ export const WhyChoose: React.FC = () => {
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((f, i) => (
           <Reveal key={f.title} delay={i * 90}>
-            <div className="h-full rounded-xl border border-border/60 bg-card/60 p-6 shadow-sm">
-              <div className="text-3xl">{f.emoji}</div>
-              <h3 className="mt-3 font-semibold text-lg">{f.title}</h3>
+            <div className="h-full rounded-xl border border-white/10 bg-white/[0.05] p-6 shadow-sm relative overflow-hidden">
+              <div className="absolute inset-x-0 top-0 h-1 bg-sky-500" />
+              <div className="w-fit rounded-full bg-sky-600/25 text-sky-300 p-3">
+                <span className="text-2xl leading-none">{f.emoji}</span>
+              </div>
+              <h3 className="mt-4 font-semibold text-lg">{f.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
             </div>
           </Reveal>

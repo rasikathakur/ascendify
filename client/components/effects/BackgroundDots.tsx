@@ -29,14 +29,16 @@ export function BackgroundDots({ className, speed = 0.25 }: BackgroundDotsProps)
       ref={ref}
       aria-hidden
       className={cn(
-        "pointer-events-none absolute inset-0 -z-10 overflow-hidden [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]",
+        "pointer-events-none absolute inset-0 -z-10 overflow-hidden",
         className,
       )}
     >
-      {/* Dot grid layer */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.3)_1px,transparent_1px)] bg-[length:22px_22px] animate-bg-pan"></div>
-      {/* Soft vignette + subtle aurora gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(80%_50%_at_50%_10%,rgba(59,130,246,0.08),transparent_60%),radial-gradient(60%_40%_at_80%_20%,rgba(168,85,247,0.06),transparent_60%),radial-gradient(50%_50%_at_20%_10%,rgba(34,197,94,0.05),transparent_60%)]"></div>
+      {/* Dark base */}
+      <div className="absolute inset-0 bg-[#0b1020]" />
+      {/* Blue tiny dot grid */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.35)_1px,transparent_1px)] bg-[length:18px_18px] animate-bg-pan" />
+      {/* Vignette */}
+      <div className="absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_20%,rgba(0,0,0,0.35),transparent_60%)]" />
     </div>
   );
 }

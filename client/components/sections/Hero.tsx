@@ -26,10 +26,10 @@ export const Hero: React.FC = () => {
       <BackgroundDots />
       <div
         ref={ref}
-        className="container flex min-h-[70vh] flex-col items-center justify-center py-20 text-center"
+        className="container flex min-h-[80vh] flex-col items-center justify-center py-24 text-center"
       >
         <h1
-          className="max-w-4xl text-balance text-4xl md:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-b from-cyan-300 via-sky-400 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-[0_0_32px_rgba(56,189,248,0.55)]"
+          className="max-w-4xl text-balance text-4xl md:text-6xl font-extrabold tracking-tight leading-tight text-sky-400 drop-shadow-[0_0_18px_rgba(56,189,248,0.45)]"
           style={{
             transform:
               "translate3d(calc(var(--parallax-x,0)*1px), calc(var(--parallax-y,0)*1px), 0)",
