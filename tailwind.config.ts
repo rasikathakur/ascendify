@@ -80,10 +80,21 @@ export default {
             height: "0",
           },
         },
+        "bg-pan": {
+          "0%": { backgroundPosition: "0% 0%" },
+          "100%": { backgroundPosition: "100% 100%" },
+        },
+        float: {
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-6px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bg-pan": "bg-pan 40s linear infinite",
+        float: "float 6s ease-in-out infinite",
       },
     },
   },
