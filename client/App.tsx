@@ -15,6 +15,7 @@ import SignIn from "./pages/SignIn";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import BackgroundDots from "@/components/effects/BackgroundDots";
+import ParticlesBackground from "@/components/effects/ParticlesBackground";
 
 const queryClient = new QueryClient();
 
