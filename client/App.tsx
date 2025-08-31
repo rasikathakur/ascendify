@@ -23,7 +23,10 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen flex flex-col bg-background text-foreground">
+        <div className="relative min-h-screen flex flex-col bg-background text-foreground">
+          <div className="absolute inset-0 -z-10">
+            {require("@/components/effects/BackgroundDots").default({})}
+          </div>
           <SiteHeader />
           <div className="flex-1">
             <Routes>
