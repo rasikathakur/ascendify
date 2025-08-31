@@ -84,6 +84,10 @@ export default {
           "0%": { backgroundPosition: "0% 0%" },
           "100%": { backgroundPosition: "100% 100%" },
         },
+        "bg-rise": {
+          "0%": { backgroundPosition: "0% 100%" },
+          "100%": { backgroundPosition: "0% 0%" },
+        },
         float: {
           "0%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-6px)" },
@@ -94,6 +98,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "bg-pan": "bg-pan 40s linear infinite",
+        "bg-rise": "bg-rise 60s linear infinite",
         float: "float 6s ease-in-out infinite",
       },
     },
