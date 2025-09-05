@@ -53,7 +53,11 @@ const App = () => (
   </QueryClientProvider>
 );
 
-declare global { interface Window { __fusionRoot?: Root } }
+declare global {
+  interface Window {
+    __fusionRoot?: Root;
+  }
+}
 
 const container = document.getElementById("root")!;
 let root = window.__fusionRoot;
