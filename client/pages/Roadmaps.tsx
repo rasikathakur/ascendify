@@ -3,38 +3,35 @@ import { BookOpen, Cpu, Code2, Briefcase } from "lucide-react"; // Icons
 
 const roadmaps = [
   {
-    title: "Cloud Computing - AWS",
-    description: "Learn HTML, CSS, JavaScript, React, and backend development.",
-    icon: <Code2 className="w-8 h-8 text-blue-500" />,
-    link: "#",
-  },
-  {
-    title: "AI / Machine Learning",
-    description: "Master Python, ML algorithms, deep learning, and deployment.",
-    icon: <Cpu className="w-8 h-8 text-green-500" />,
-    link: "#",
-  },
-  {
-    title: "Data Science",
-    description:
-      "Build skills in statistics, data analysis, visualization, and big data tools.",
-    icon: <BookOpen className="w-8 h-8 text-purple-500" />,
-    link: "#",
-  },
-  {
-    title: "Full Stack Development in Java",
-    description:
-      "Resume building, freelancing, internships, and job preparation guides.",
-    icon: <Briefcase className="w-8 h-8 text-orange-500" />,
-    link: "#",
-  },
-  {
-    title: "Full Stack Development in .Net",
-    description:
-      "Resume building, freelancing, internships, and job preparation guides.",
-    icon: <Briefcase className="w-8 h-8 text-orange-500" />,
-    link: "#",
-  }
+  title: "Cloud Computing - AWS",
+  description: "Learn core AWS services including EC2, S3, Lambda, IAM, and build scalable cloud-based applications.",
+  icon: <Code2 className="w-8 h-8 text-blue-500" />,
+  link: "#",
+},
+{
+  title: "AI / Machine Learning",
+  description: "Master Python, machine learning algorithms, deep learning frameworks, and real-world model deployment.",
+  icon: <Cpu className="w-8 h-8 text-green-500" />,
+  link: "#",
+},
+{
+  title: "Data Science",
+  description: "Develop expertise in statistics, data cleaning, visualization, predictive modeling, and big data tools.",
+  icon: <BookOpen className="w-8 h-8 text-purple-500" />,
+  link: "#",
+},
+{
+  title: "Full Stack Development in Java",
+  description: "Gain hands-on skills in Java, Spring Boot, REST APIs, frontend frameworks, and database integration.",
+  icon: <Briefcase className="w-8 h-8 text-orange-500" />,
+  link: "#",
+},
+{
+  title: "Full Stack Development in .Net",
+  description: "Learn C#, ASP.NET Core, MVC, Entity Framework, frontend integration, and deployment strategies.",
+  icon: <Briefcase className="w-8 h-8 text-orange-500" />,
+  link: "#",
+}
 ];
 
 export default function Roadmaps() {
