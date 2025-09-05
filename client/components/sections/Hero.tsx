@@ -2,9 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ParticleAnimation from "../ParticleAnimation/ParticleAnimation";
+import MultiStepAssessmentModal from "@/components/assessment/MultiStepAssessmentModal";
 
 export const Hero: React.FC = () => {
   const ref = useRef<HTMLDivElement | null>(null);
+  const [open, setOpen] = React.useState(false);
 
   // Simple parallax on mouse move
   useEffect(() => {
