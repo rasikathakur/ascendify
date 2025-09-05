@@ -12,6 +12,7 @@ import Roadmaps from "./pages/Roadmaps";
 import Assessment from "./pages/Assessment";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import Community from "./pages/Community";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
@@ -39,6 +40,7 @@ const App = () => (
               <Route path="/assessment" element={<Assessment />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/signin" element={<SignIn />} />
+              <Route path="/signup" element={<SignUp />} />
               <Route path="/community" element={<Community />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

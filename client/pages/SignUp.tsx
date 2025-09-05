@@ -6,10 +6,10 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <AuthShell
-      title="Welcome Back"
+      title="Create an Account"
       footer={
         <div className="space-y-4">
           <div className="text-center text-xs text-muted-foreground">Or continue with</div>
@@ -24,12 +24,16 @@ export default function SignIn() {
             </Button>
           </div>
           <div className="text-center text-sm text-muted-foreground">
-            Don’t have an account? <Link to="/signup" className="text-blue-600 hover:underline">Sign Up</Link>
+            Already have an account? <Link to="/signin" className="text-blue-600 hover:underline">Sign In</Link>
           </div>
         </div>
       }
     >
       <form className="space-y-4">
+        <div className="space-y-2">
+          <Label htmlFor="name">Full Name</Label>
+          <Input id="name" name="name" type="text" placeholder="Jane Doe" className="transition-colors hover:border-blue-300 focus-visible:ring-blue-600" required />
+        </div>
         <div className="space-y-2">
           <Label htmlFor="email">Email</Label>
           <Input id="email" name="email" type="email" placeholder="you@example.com" className="transition-colors hover:border-blue-300 focus-visible:ring-blue-600" required />
@@ -38,7 +42,11 @@ export default function SignIn() {
           <Label htmlFor="password">Password</Label>
           <Input id="password" name="password" type="password" placeholder="••••••••" className="transition-colors hover:border-blue-300 focus-visible:ring-blue-600" required />
         </div>
-        <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white">Sign In</Button>
+        <div className="space-y-2">
+          <Label htmlFor="confirm">Confirm Password</Label>
+          <Input id="confirm" name="confirm" type="password" placeholder="••••••••" className="transition-colors hover:border-blue-300 focus-visible:ring-blue-600" required />
+        </div>
+        <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white">Sign Up</Button>
       </form>
     </AuthShell>
   );
