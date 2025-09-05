@@ -3,7 +3,7 @@ import { BookOpen, Cpu, Code2, Briefcase } from "lucide-react"; // Icons
 
 const roadmaps = [
   {
-    title: "Web Development",
+    title: "Cloud Computing - AWS",
     description: "Learn HTML, CSS, JavaScript, React, and backend development.",
     icon: <Code2 className="w-8 h-8 text-blue-500" />,
     link: "#",
@@ -22,12 +22,19 @@ const roadmaps = [
     link: "#",
   },
   {
-    title: "Career Growth",
+    title: "Full Stack Development in Java",
     description:
       "Resume building, freelancing, internships, and job preparation guides.",
     icon: <Briefcase className="w-8 h-8 text-orange-500" />,
     link: "#",
   },
+  {
+    title: "Full Stack Development in .Net",
+    description:
+      "Resume building, freelancing, internships, and job preparation guides.",
+    icon: <Briefcase className="w-8 h-8 text-orange-500" />,
+    link: "#",
+  }
 ];
 
 export default function Roadmaps() {
