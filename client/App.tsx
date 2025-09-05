@@ -12,6 +12,7 @@ import Roadmaps from "./pages/Roadmaps";
 import Assessment from "./pages/Assessment";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
+import Community from "./pages/Community";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import BackgroundDots from "@/components/effects/BackgroundDots";
