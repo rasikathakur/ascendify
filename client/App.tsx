@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Community from "./pages/Community";
+import JavaRoadmap from "./pages/roadmaps/Java";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import BackgroundDots from "@/components/effects/BackgroundDots";
@@ -37,6 +38,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/roadmaps" element={<Roadmaps />} />
+              <Route path="/roadmaps/java" element={<JavaRoadmap />} />
               <Route path="/assessment" element={<Assessment />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/signin" element={<SignIn />} />
