@@ -23,8 +23,8 @@ const roadmaps = [
 {
   title: "Full Stack Development in Java",
   description: "Gain hands-on skills in Java, Spring Boot, REST APIs, frontend frameworks, and database integration.",
-  icon: <Briefcase className="w-8 h-8 text-orange-500" />,
-  link: "#",
+  icon: <Briefcase className="w-8 h-8 text-sky-500" />,
+  link: "/roadmaps/java",
 },
 {
   title: "Full Stack Development in .Net",
