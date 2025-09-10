@@ -19,8 +19,8 @@ const sections: Section[] = [
       "Basic Economics: CAPEX vs. OPEX, Total Cost of Ownership (TCO)",
       "Essential Tools: AWS Management Console, AWS CLI, SDKs",
       "Core AWS Services: EC2, S3, VPC, IAM, RDS",
-      "Hands-on Practice: Launching an EC2 instance, creating an S3 bucket, setting up a VPC, configuring IAM users, and creating an RDS database"
-    ]
+      "Hands-on Practice: Launching an EC2 instance, creating an S3 bucket, setting up a VPC, configuring IAM users, and creating an RDS database",
+    ],
   },
   {
     step: "Basic",
@@ -34,8 +34,8 @@ const sections: Section[] = [
       "Storage Basics: S3, EBS, EFS, Storage Gateway",
       "Compute Basics: EC2, Lambda, Elastic Beanstalk",
       "Database Basics: RDS, DynamoDB, Redshift",
-      "Implementation: AWS Free Tier for hands-on practice"
-    ]
+      "Implementation: AWS Free Tier for hands-on practice",
+    ],
   },
   {
     step: "Intermediate",
@@ -48,8 +48,8 @@ const sections: Section[] = [
       "Serverless Architecture: AWS Lambda, API Gateway, DynamoDB, Step Functions",
       "Containers: Amazon ECS, EKS, and Fargate",
       "Message Queues: SQS, SNS",
-      "Advanced Databases: Aurora, DynamoDB Streams, DAX, ElastiCache"
-    ]
+      "Advanced Databases: Aurora, DynamoDB Streams, DAX, ElastiCache",
+    ],
   },
   {
     step: "Intermediate",
@@ -62,8 +62,8 @@ const sections: Section[] = [
       "Cost Optimization: Reserved Instances, Spot Instances, Savings Plans",
       "Disaster Recovery: Backup strategies, Pilot Light, Warm Standby, Multi-Site Active-Active",
       "Microservices Architecture: Designing and deploying microservices using ECS, Lambda, API Gateway",
-      "Implementation: Building a full-stack application using multiple AWS services"
-    ]
+      "Implementation: Building a full-stack application using multiple AWS services",
+    ],
   },
   {
     step: "Advanced",
@@ -76,8 +76,8 @@ const sections: Section[] = [
       "Hybrid Cloud: AWS Outposts, Storage Gateway, DataSync",
       "Serverless at Scale: Optimizing Lambda functions, Step Functions, EventBridge",
       "Big Data & Analytics: EMR, Athena, Redshift, Kinesis, Glue, QuickSight",
-      "Machine Learning: SageMaker, Rekognition, Lex, Polly, Comprehend"
-    ]
+      "Machine Learning: SageMaker, Rekognition, Lex, Polly, Comprehend",
+    ],
   },
   {
     step: "Advanced",
@@ -91,8 +91,8 @@ const sections: Section[] = [
       "Penetration Testing: Ethical hacking in the cloud (with AWS approval)",
       "Data & Machine Learning: Building, training, and deploying ML models using SageMaker",
       "MLOps: Model deployment, management, and monitoring using SageMaker, MLflow, Kubeflow",
-      "Cloud-Native Development: Developing and deploying cloud-native applications using containers and serverless"
-    ]
+      "Cloud-Native Development: Developing and deploying cloud-native applications using containers and serverless",
+    ],
   },
   {
     step: "Advanced",
@@ -108,9 +108,9 @@ const sections: Section[] = [
       "Advanced Certifications: AWS Solutions Architect Professional, DevOps Engineer Professional, Security Specialty",
       "Reading Research Papers: AWS Whitepapers, re:Invent sessions, AWS Blogs",
       "Contributing to Open Source: AWS CDK, AWS SAM, Open-Source AWS tools",
-      "Specializations: Security, Networking, Data Analytics, Machine Learning, DevOps"
-    ]
-  }
+      "Specializations: Security, Networking, Data Analytics, Machine Learning, DevOps",
+    ],
+  },
 ];
 
 type Marker = {
@@ -277,7 +277,8 @@ export default function CloudComputingRoadmap() {
             </h1>
           </div>
           <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl">
-            A comprehensive learning path from cloud fundamentals to advanced AWS architecture and specialized services.
+            A comprehensive learning path from cloud fundamentals to advanced
+            AWS architecture and specialized services.
           </p>
         </div>
       </div>
@@ -428,7 +429,8 @@ export default function CloudComputingRoadmap() {
               🚀 Complete your AWS cloud journey
             </p>
             <p className="text-xs sm:text-sm">
-              Scroll up to explore each section • Hover over titles for detailed topics
+              Scroll up to explore each section • Hover over titles for detailed
+              topics
             </p>
           </div>
           <div className="mt-4 sm:mt-6">

@@ -19,7 +19,7 @@ const sections: Section[] = [
       "Essential Tools: Virtual environments, NumPy, Pandas, Matplotlib/Seaborn",
       "Core ML Concepts: Types of ML, key terminology",
       "ML Project Workflow: Data collection, preprocessing, model training, evaluation",
-      "First Algorithms: Linear Regression, Logistic Regression, k-NN, k-Means"
+      "First Algorithms: Linear Regression, Logistic Regression, k-NN, k-Means",
     ],
   },
   {
@@ -33,7 +33,7 @@ const sections: Section[] = [
       "Feature Scaling: Normalization, Standardization",
       "Model Training & Evaluation: Training/testing splits, overfitting/underfitting",
       "Evaluation Metrics: MAE, MSE, R-squared, Accuracy, Precision, Recall",
-      "Implementation: scikit-learn for algorithms"
+      "Implementation: scikit-learn for algorithms",
     ],
   },
   {
@@ -46,7 +46,7 @@ const sections: Section[] = [
       "Tree-Based Models: Decision Trees, Random Forest",
       "Ensemble Methods: Bagging, Boosting (GBM, XGBoost, LightGBM, CatBoost)",
       "Support Vector Machines: Maximum margin classifiers, kernels",
-      "Naive Bayes: Based on Bayes' Theorem"
+      "Naive Bayes: Based on Bayes' Theorem",
     ],
   },
   {
@@ -60,7 +60,7 @@ const sections: Section[] = [
       "Activation Functions: Sigmoid, Tanh, ReLU",
       "Training Neural Networks: Backpropagation, Optimizers (SGD, Adam, RMSprop)",
       "Loss Functions: Cross-Entropy, MSE",
-      "Deep Learning Frameworks: TensorFlow or PyTorch"
+      "Deep Learning Frameworks: TensorFlow or PyTorch",
     ],
   },
   {
@@ -74,7 +74,7 @@ const sections: Section[] = [
       "RNN Architectures: LSTMs, GRUs",
       "Applications: Time series forecasting, text generation",
       "Transformers & Attention Mechanisms: BERT, GPT models",
-      "Applications: NLP translation, summarization, Q&A"
+      "Applications: NLP translation, summarization, Q&A",
     ],
   },
   {
@@ -87,7 +87,7 @@ const sections: Section[] = [
       "Unsupervised & Self-Supervised Learning: Techniques for unlabeled data",
       "Model Deployment: APIs with FastAPI/Flask, Docker containerization",
       "Model Management: MLflow, Weights & Biases",
-      "Cloud ML Services: AWS SageMaker, Google Vertex AI, Azure ML"
+      "Cloud ML Services: AWS SageMaker, Google Vertex AI, Azure ML",
     ],
   },
   {
@@ -101,9 +101,9 @@ const sections: Section[] = [
       "Monitoring & Maintenance: Data drift, concept drift",
       "Reading Research Papers: NeurIPS, ICML, CVPR",
       "Contributing to Open Source: scikit-learn, TensorFlow, PyTorch",
-      "Specializations: Computer Vision, NLP, Reinforcement Learning"
+      "Specializations: Computer Vision, NLP, Reinforcement Learning",
     ],
-  }
+  },
 ];
 
 type Marker = {
@@ -266,7 +266,7 @@ export default function CloudComputingRoadmap() {
           <div className="flex items-center gap-2 sm:gap-4 mb-4">
             <div className="h-1 w-6 sm:w-8 bg-sky-400" />
             <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-sky-400 drop-shadow-[0_0_18px_rgba(56,189,248,0.35)]">
-              Artificial Intelligence and Machine Learning 
+              Artificial Intelligence and Machine Learning
             </h1>
           </div>
           <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl">
@@ -421,7 +421,8 @@ export default function CloudComputingRoadmap() {
               🚀 Complete your Cloud Computing & ML journey
             </p>
             <p className="text-xs sm:text-sm">
-              Scroll up to explore each section • Hover over titles for detailed topics
+              Scroll up to explore each section • Hover over titles for detailed
+              topics
             </p>
           </div>
           <div className="mt-4 sm:mt-6">

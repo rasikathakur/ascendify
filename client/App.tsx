@@ -45,7 +45,10 @@ const App = () => (
               <Route path="/roadmaps/java" element={<JavaRoadmap />} />
               <Route path="/roadmaps/aws" element={<AWSRoadmap />} />
               <Route path="/roadmaps/ml" element={<MLRoadmap />} />
-              <Route path="/roadmaps/datascience" element={<DataScienceRoadmap />} />
+              <Route
+                path="/roadmaps/datascience"
+                element={<DataScienceRoadmap />}
+              />
               <Route path="/roadmaps/dotnet" element={<DotNetRoadmap />} />
               <Route path="/assessment" element={<Assessment />} />
               <Route path="/contact" element={<Contact />} />
