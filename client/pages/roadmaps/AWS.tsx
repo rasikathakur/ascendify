@@ -12,97 +12,104 @@ const sections: Section[] = [
     step: "Basic",
     title: "The Foundation",
     items: [
-      "Programming: Python (syntax, data structures, control flow, functions, libraries)",
-      "Mathematics: Linear Algebra (vectors, matrices, operations)",
-      "Mathematics: Calculus (derivatives, gradients)",
-      "Mathematics: Statistics & Probability (mean, median, variance, probability)",
-      "Essential Tools: Virtual environments, NumPy, Pandas, Matplotlib/Seaborn",
-      "Core ML Concepts: Types of ML, key terminology",
-      "ML Project Workflow: Data collection, preprocessing, model training, evaluation",
-      "First Algorithms: Linear Regression, Logistic Regression, k-NN, k-Means"
-    ],
+      "Cloud Computing: Definition, benefits, and pay-as-you-go pricing model",
+      "Deployment Models: Public, Private, Hybrid, and Multi-Cloud",
+      "Service Models: IaaS (EC2, VPC, S3), PaaS (Elastic Beanstalk, RDS), SaaS (WorkMail, Chime)",
+      "The Shared Responsibility Model: Security of the Cloud vs. Security in the Cloud",
+      "Basic Economics: CAPEX vs. OPEX, Total Cost of Ownership (TCO)",
+      "Essential Tools: AWS Management Console, AWS CLI, SDKs",
+      "Core AWS Services: EC2, S3, VPC, IAM, RDS",
+      "Hands-on Practice: Launching an EC2 instance, creating an S3 bucket, setting up a VPC, configuring IAM users, and creating an RDS database"
+    ]
   },
   {
     step: "Basic",
-    title: "Core Machine Learning",
+    title: "Core Cloud Concepts",
     items: [
-      "What is Machine Learning? Difference from traditional programming",
-      "Types of ML: Supervised, Unsupervised, Reinforcement Learning",
-      "Key Terminology: Features, labels, training, testing, prediction",
-      "Data Preprocessing: Handling missing values, encoding categorical data",
-      "Feature Scaling: Normalization, Standardization",
-      "Model Training & Evaluation: Training/testing splits, overfitting/underfitting",
-      "Evaluation Metrics: MAE, MSE, R-squared, Accuracy, Precision, Recall",
-      "Implementation: scikit-learn for algorithms"
-    ],
+      "What is Cloud Computing?: Differences from traditional IT infrastructure",
+      "Types of Cloud Services: IaaS, PaaS, SaaS",
+      "Key Terminology: Regions, Availability Zones, Edge Locations",
+      "Networking Basics: VPC, Subnets, Route Tables, Internet Gateway, NAT Gateway",
+      "Security Basics: IAM, Security Groups, Network ACLs",
+      "Storage Basics: S3, EBS, EFS, Storage Gateway",
+      "Compute Basics: EC2, Lambda, Elastic Beanstalk",
+      "Database Basics: RDS, DynamoDB, Redshift",
+      "Implementation: AWS Free Tier for hands-on practice"
+    ]
   },
   {
     step: "Intermediate",
-    title: "Advanced Data Handling",
+    title: "Advanced Cloud Services",
     items: [
-      "Advanced Feature Engineering: Creating new features, polynomial features",
-      "Dimensionality Reduction: PCA, LDA",
-      "Handling Imbalanced Datasets: SMOTE, undersampling, oversampling",
-      "Tree-Based Models: Decision Trees, Random Forest",
-      "Ensemble Methods: Bagging, Boosting (GBM, XGBoost, LightGBM, CatBoost)",
-      "Support Vector Machines: Maximum margin classifiers, kernels",
-      "Naive Bayes: Based on Bayes' Theorem"
-    ],
+      "High Availability & Fault Tolerance: Multi-AZ deployments, Auto Scaling, Load Balancers (ELB/ALB)",
+      "Scalability & Elasticity: Vertical vs. Horizontal scaling, Auto Scaling Groups",
+      "Core Networking: Subnets, Route Tables, Security Groups, NACLs, VPNs, Direct Connect",
+      "Advanced Security: Encryption (KMS), IAM Roles, Policies, AssumeRole, AWS Organizations",
+      "Serverless Architecture: AWS Lambda, API Gateway, DynamoDB, Step Functions",
+      "Containers: Amazon ECS, EKS, and Fargate",
+      "Message Queues: SQS, SNS",
+      "Advanced Databases: Aurora, DynamoDB Streams, DAX, ElastiCache"
+    ]
   },
   {
     step: "Intermediate",
-    title: "Model Evaluation & Optimization",
+    title: "Cloud Architecture & DevOps",
     items: [
-      "Advanced Validation Techniques: k-Fold CV, Stratified k-Fold",
-      "Hyperparameter Tuning: GridSearchCV, RandomizedSearchCV",
-      "More Evaluation Metrics: F1-Score, ROC-AUC curves, Adjusted R-squared",
-      "Introduction to Neural Networks: Perceptron, Multi-Layer Perceptrons",
-      "Activation Functions: Sigmoid, Tanh, ReLU",
-      "Training Neural Networks: Backpropagation, Optimizers (SGD, Adam, RMSprop)",
-      "Loss Functions: Cross-Entropy, MSE",
-      "Deep Learning Frameworks: TensorFlow or PyTorch"
-    ],
+      "Advanced Validation Techniques: Multi-AZ deployments, Blue/Green deployments",
+      "Infrastructure as Code (IaC): AWS CloudFormation, Terraform",
+      "CI/CD Pipelines: AWS CodePipeline, CodeBuild, CodeDeploy, GitHub Actions",
+      "Monitoring & Logging: CloudWatch, CloudTrail, AWS Config",
+      "Cost Optimization: Reserved Instances, Spot Instances, Savings Plans",
+      "Disaster Recovery: Backup strategies, Pilot Light, Warm Standby, Multi-Site Active-Active",
+      "Microservices Architecture: Designing and deploying microservices using ECS, Lambda, API Gateway",
+      "Implementation: Building a full-stack application using multiple AWS services"
+    ]
   },
   {
     step: "Advanced",
-    title: "Deep Learning Architectures",
+    title: "Cloud Solutions Architecture",
     items: [
-      "Convolutional Neural Networks: Convolutions, pooling, padding",
-      "CNN Architectures: LeNet, AlexNet, VGG, ResNet, Inception",
-      "Applications: Image classification, object detection, segmentation",
-      "Recurrent Neural Networks: Handling sequential data, hidden states",
-      "RNN Architectures: LSTMs, GRUs",
-      "Applications: Time series forecasting, text generation",
-      "Transformers & Attention Mechanisms: BERT, GPT models",
-      "Applications: NLP translation, summarization, Q&A"
-    ],
+      "Advanced Design Patterns: Event-driven architecture, Microservices, Data Lakes, Disaster Recovery strategies",
+      "Well-Architected Framework: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization",
+      "Multi-account Strategies: AWS Organizations, Service Control Policies (SCPs), Consolidated Billing",
+      "Advanced Networking: Transit Gateway, PrivateLink, Direct Connect, VPN CloudHub",
+      "Hybrid Cloud: AWS Outposts, Storage Gateway, DataSync",
+      "Serverless at Scale: Optimizing Lambda functions, Step Functions, EventBridge",
+      "Big Data & Analytics: EMR, Athena, Redshift, Kinesis, Glue, QuickSight",
+      "Machine Learning: SageMaker, Rekognition, Lex, Polly, Comprehend"
+    ]
   },
   {
     step: "Advanced",
-    title: "Advanced Topics & Specializations",
+    title: "DevOps, Security & Specializations",
     items: [
-      "Generative Models: GANs, VAEs, Diffusion Models",
-      "Reinforcement Learning: Agent, environment, actions, rewards, policy",
-      "RL Algorithms: Q-Learning, Deep Q-Networks, Policy Gradients",
-      "Unsupervised & Self-Supervised Learning: Techniques for unlabeled data",
-      "Model Deployment: APIs with FastAPI/Flask, Docker containerization",
-      "Model Management: MLflow, Weights & Biases",
-      "Cloud ML Services: AWS SageMaker, Google Vertex AI, Azure ML"
-    ],
+      "Advanced CI/CD: Blue/Green Deployments, Canary Deployments, Infrastructure Testing",
+      "Configuration Management: Ansible, Chef, Puppet",
+      "Observability: CloudWatch Logs Insights, X-Ray, Prometheus, Grafana",
+      "Security: Zero-Trust Networks, AWS Network Firewall, GuardDuty, Inspector, Macie",
+      "Compliance & Governance: AWS Config, AWS Artifact, AWS Control Tower, AWS Security Hub",
+      "Penetration Testing: Ethical hacking in the cloud (with AWS approval)",
+      "Data & Machine Learning: Building, training, and deploying ML models using SageMaker",
+      "MLOps: Model deployment, management, and monitoring using SageMaker, MLflow, Kubeflow",
+      "Cloud-Native Development: Developing and deploying cloud-native applications using containers and serverless"
+    ]
   },
   {
     step: "Advanced",
-    title: "MLOps & Deployment",
+    title: "Advanced Cloud Topics & Specializations",
     items: [
-      "Model Deployment: Creating APIs, Containerizing with Docker",
-      "Model Management: Tracking experiments, packaging code",
-      "Cloud ML Services: AWS SageMaker, Google Vertex AI, Azure ML",
-      "Building and deploying pipelines",
-      "Monitoring & Maintenance: Data drift, concept drift",
-      "Reading Research Papers: NeurIPS, ICML, CVPR",
-      "Contributing to Open Source: scikit-learn, TensorFlow, PyTorch",
-      "Specializations: Computer Vision, NLP, Reinforcement Learning"
-    ],
+      "Generative AI: Using AWS services like Bedrock, SageMaker JumpStart for generative AI models",
+      "Advanced Analytics: Real-time analytics with Kinesis, batch processing with Glue, data lakes with Lake Formation",
+      "IoT: AWS IoT Core, IoT Greengrass, IoT Analytics",
+      "Edge Computing: AWS Local Zones, Wavelength, Outposts",
+      "Blockchain: Amazon Managed Blockchain, Quantum Ledger Database (QLDB)",
+      "Robotics: AWS RoboMaker",
+      "Space: AWS Ground Station",
+      "Advanced Certifications: AWS Solutions Architect Professional, DevOps Engineer Professional, Security Specialty",
+      "Reading Research Papers: AWS Whitepapers, re:Invent sessions, AWS Blogs",
+      "Contributing to Open Source: AWS CDK, AWS SAM, Open-Source AWS tools",
+      "Specializations: Security, Networking, Data Analytics, Machine Learning, DevOps"
+    ]
   }
 ];
 
@@ -266,11 +273,11 @@ export default function CloudComputingRoadmap() {
           <div className="flex items-center gap-2 sm:gap-4 mb-4">
             <div className="h-1 w-6 sm:w-8 bg-sky-400" />
             <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-sky-400 drop-shadow-[0_0_18px_rgba(56,189,248,0.35)]">
-              Cloud Computing - AWS & Machine Learning
+              AWS Cloud Computing
             </h1>
           </div>
           <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl">
-            A comprehensive learning path from ML fundamentals to advanced cloud deployment with AWS.
+            A comprehensive learning path from cloud fundamentals to advanced AWS architecture and specialized services.
           </p>
         </div>
       </div>
@@ -418,7 +425,7 @@ export default function CloudComputingRoadmap() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-muted-foreground">
             <p className="mb-2 text-sm sm:text-base">
-              🚀 Complete your Cloud Computing & ML journey
+              🚀 Complete your AWS cloud journey
             </p>
             <p className="text-xs sm:text-sm">
               Scroll up to explore each section • Hover over titles for detailed topics
