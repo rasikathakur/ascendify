@@ -5,8 +5,8 @@ const roadmaps = [
   {
   title: "Cloud Computing - AWS",
   description: "Learn core AWS services including EC2, S3, Lambda, IAM, and build scalable cloud-based applications.",
-  icon: <Code2 className="w-8 h-8 text-blue-500" />,
-  link: "#",
+  icon: <Code2 className="w-8 h-8 text-sky-500" />,
+  link: "/roadmaps/aws",
 },
 {
   title: "AI / Machine Learning",
