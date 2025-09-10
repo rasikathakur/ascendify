@@ -11,14 +11,14 @@ const roadmaps = [
 {
   title: "AI / Machine Learning",
   description: "Master Python, machine learning algorithms, deep learning frameworks, and real-world model deployment.",
-  icon: <Cpu className="w-8 h-8 text-green-500" />,
-  link: "#",
+  icon: <Cpu className="w-8 h-8 text-sky-500" />,
+  link: "/roadmaps/ml",
 },
 {
   title: "Data Science",
   description: "Develop expertise in statistics, data cleaning, visualization, predictive modeling, and big data tools.",
-  icon: <BookOpen className="w-8 h-8 text-purple-500" />,
-  link: "#",
+  icon: <BookOpen className="w-8 h-8 text-sky-500" />,
+  link: "/roadmaps/datascience",
 },
 {
   title: "Full Stack Development in Java",
@@ -29,8 +29,8 @@ const roadmaps = [
 {
   title: "Full Stack Development in .Net",
   description: "Learn C#, ASP.NET Core, MVC, Entity Framework, frontend integration, and deployment strategies.",
-  icon: <Briefcase className="w-8 h-8 text-orange-500" />,
-  link: "#",
+  icon: <Briefcase className="w-8 h-8 text-sky-500" />,
+  link: "/roadmaps/dotnet",
 }
 ];
 
