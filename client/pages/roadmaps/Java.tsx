@@ -8,56 +8,221 @@ type Section = {
 };
 
 const sections: Section[] = [
-  { step: "Basic", title: "Introduction", items: ["Java Intro", "Java Get Started", "Java Syntax", "Java Output", "Java Comments"] },
-  { step: "Basic", title: "Variables & Data Types", items: ["Java Variables", "Java Data Types", "Java Type Casting"] },
-  { step: "Basic", title: "Operators & Strings", items: ["Java Operators", "Java Strings", "Java Math", "Java Booleans"] },
-  { step: "Basic", title: "Control Flow", items: ["Java Conditions (if-else)", "Java Switch", "Java While Loop", "Java For Loop", "Java Break/Continue"] },
-  { step: "Basic", title: "Arrays & Methods", items: ["Java Arrays", "Java Methods", "Java Method Parameters", "Java Method Overloading", "Java Scope", "Java Recursion"] },
   {
-    step: "Intermediate", title: "Object-Oriented Programming", items: [
-      "Java OOP Concepts", "Java Classes/Objects", "Java Class Attributes & Methods", "Java Constructors", "Java this Keyword", "Java Modifiers", "Java Encapsulation", "Java Packages / API", "Java Inheritance", "Java Polymorphism", "Java super Keyword", "Java Inner Classes", "Java Abstraction", "Java Interface", "Java Enums",
-    ]
-  },
-  { step: "Intermediate", title: "Error Handling", items: ["Java Errors", "Java Debugging", "Exceptions (try-catch-finally, throw, throws)"] },
-  { step: "Intermediate", title: "File Handling", items: ["Java Files", "Java Create/Write Files", "Java Read Files", "Java Delete Files"] },
-  {
-    step: "Intermediate", title: "Data Structures & Collections", items: [
-      "Java Data Structures", "Java Collections Framework", "Java List / ArrayList / LinkedList", "Java List Sorting", "Java Set / HashSet / TreeSet / LinkedHashSet", "Java Map / HashMap / TreeMap / LinkedHashMap", "Java Iterator",
-    ]
+    step: "Basic",
+    title: "Introduction",
+    items: [
+      "Java Intro",
+      "Java Get Started",
+      "Java Syntax",
+      "Java Output",
+      "Java Comments",
+    ],
   },
   {
-    step: "Intermediate", title: "Advanced Java Concepts", items: [
-      "Java Wrapper Classes", "Java Generics", "Java Annotations", "Java Threads (Multithreading)", "Java RegEx", "Java Lambda Expressions", "Java Advanced Sorting",
-    ]
-  },
-  { step: "Advanced", title: "Spring Boot Introduction", items: ["Introduction", "Spring vs Spring Boot", "Spring MVC vs Spring Boot"] },
-  {
-    step: "Advanced", title: "Spring Core Concepts", items: [
-      "Inversion of Control", "Dependency Injection", "BeanFactory vs. ApplicationContext", "Spring Bean Lifecycle", "Singleton, Prototype Scope", "Custom Scope", "Create a Spring Bean", "Spring Autowiring", "DispatcherServlet", "Spring IoC Container", "Maven/Gradle", "Spring Boot Core Features",
-    ]
+    step: "Basic",
+    title: "Variables & Data Types",
+    items: ["Java Variables", "Java Data Types", "Java Type Casting"],
   },
   {
-    step: "Advanced", title: "Architecture & Configuration", items: [
-      "Annotations", "Auto-configuration", "Spring Boot Starters", "Create a basic application", "Best Practices", "Application Properties", "YAML Configuration", "Actuator", "Logging", "DevTools",
-    ]
+    step: "Basic",
+    title: "Operators & Strings",
+    items: ["Java Operators", "Java Strings", "Java Math", "Java Booleans"],
   },
   {
-    step: "Advanced", title: "REST API with Spring Boot", items: [
-      "@RestController", "@RequestMapping", "@GetMapping & @PostMapping", "@PutMapping & @DeleteMapping", "@PathVariable & @RequestParam", "@RequestBody", "REST API JSON Serialization/Deserialization", "Exception Handling", "Validation",
-    ]
+    step: "Basic",
+    title: "Control Flow",
+    items: [
+      "Java Conditions (if-else)",
+      "Java Switch",
+      "Java While Loop",
+      "Java For Loop",
+      "Java Break/Continue",
+    ],
   },
   {
-    step: "Advanced", title: "Database & JPA Integration", items: [
-      "Integrating with MySQL", "PostgreSQL", "MongoDB", "Spring Data JPA", "Hibernate Basics", "JDBC", "CrudRepository vs. JpaRepository", "H2 Database for Testing", "CRUD Operations with JPA Repositories",
-    ]
+    step: "Basic",
+    title: "Arrays & Methods",
+    items: [
+      "Java Arrays",
+      "Java Methods",
+      "Java Method Parameters",
+      "Java Method Overloading",
+      "Java Scope",
+      "Java Recursion",
+    ],
   },
   {
-    step: "Advanced", title: "Advanced Spring Boot Features", items: [
-      "Scheduling Tasks", "Sending Emails", "File Handling & Uploading Files", "Caching", "Caching with other Providers", "Transaction Management", "DTO Mapping",
-    ]
+    step: "Intermediate",
+    title: "Object-Oriented Programming",
+    items: [
+      "Java OOP Concepts",
+      "Java Classes/Objects",
+      "Java Class Attributes & Methods",
+      "Java Constructors",
+      "Java this Keyword",
+      "Java Modifiers",
+      "Java Encapsulation",
+      "Java Packages / API",
+      "Java Inheritance",
+      "Java Polymorphism",
+      "Java super Keyword",
+      "Java Inner Classes",
+      "Java Abstraction",
+      "Java Interface",
+      "Java Enums",
+    ],
   },
-  { step: "Advanced", title: "Microservices with Spring Boot", items: ["Introduction", "Communication Between Spring Microservices", "Deploy Java Microservices on AWS Elastic Beanstalk"] },
-  { step: "Advanced", title: "Spring Boot Testing", items: ["Unit Testing with JUnit", "Testing with Mockito", "Integration Testing with MockMVC", "Using ZeroCode for Testing"] },
+  {
+    step: "Intermediate",
+    title: "Error Handling",
+    items: [
+      "Java Errors",
+      "Java Debugging",
+      "Exceptions (try-catch-finally, throw, throws)",
+    ],
+  },
+  {
+    step: "Intermediate",
+    title: "File Handling",
+    items: [
+      "Java Files",
+      "Java Create/Write Files",
+      "Java Read Files",
+      "Java Delete Files",
+    ],
+  },
+  {
+    step: "Intermediate",
+    title: "Data Structures & Collections",
+    items: [
+      "Java Data Structures",
+      "Java Collections Framework",
+      "Java List / ArrayList / LinkedList",
+      "Java List Sorting",
+      "Java Set / HashSet / TreeSet / LinkedHashSet",
+      "Java Map / HashMap / TreeMap / LinkedHashMap",
+      "Java Iterator",
+    ],
+  },
+  {
+    step: "Intermediate",
+    title: "Advanced Java Concepts",
+    items: [
+      "Java Wrapper Classes",
+      "Java Generics",
+      "Java Annotations",
+      "Java Threads (Multithreading)",
+      "Java RegEx",
+      "Java Lambda Expressions",
+      "Java Advanced Sorting",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "Spring Boot Introduction",
+    items: [
+      "Introduction",
+      "Spring vs Spring Boot",
+      "Spring MVC vs Spring Boot",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "Spring Core Concepts",
+    items: [
+      "Inversion of Control",
+      "Dependency Injection",
+      "BeanFactory vs. ApplicationContext",
+      "Spring Bean Lifecycle",
+      "Singleton, Prototype Scope",
+      "Custom Scope",
+      "Create a Spring Bean",
+      "Spring Autowiring",
+      "DispatcherServlet",
+      "Spring IoC Container",
+      "Maven/Gradle",
+      "Spring Boot Core Features",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "Architecture & Configuration",
+    items: [
+      "Annotations",
+      "Auto-configuration",
+      "Spring Boot Starters",
+      "Create a basic application",
+      "Best Practices",
+      "Application Properties",
+      "YAML Configuration",
+      "Actuator",
+      "Logging",
+      "DevTools",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "REST API with Spring Boot",
+    items: [
+      "@RestController",
+      "@RequestMapping",
+      "@GetMapping & @PostMapping",
+      "@PutMapping & @DeleteMapping",
+      "@PathVariable & @RequestParam",
+      "@RequestBody",
+      "REST API JSON Serialization/Deserialization",
+      "Exception Handling",
+      "Validation",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "Database & JPA Integration",
+    items: [
+      "Integrating with MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Spring Data JPA",
+      "Hibernate Basics",
+      "JDBC",
+      "CrudRepository vs. JpaRepository",
+      "H2 Database for Testing",
+      "CRUD Operations with JPA Repositories",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "Advanced Spring Boot Features",
+    items: [
+      "Scheduling Tasks",
+      "Sending Emails",
+      "File Handling & Uploading Files",
+      "Caching",
+      "Caching with other Providers",
+      "Transaction Management",
+      "DTO Mapping",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "Microservices with Spring Boot",
+    items: [
+      "Introduction",
+      "Communication Between Spring Microservices",
+      "Deploy Java Microservices on AWS Elastic Beanstalk",
+    ],
+  },
+  {
+    step: "Advanced",
+    title: "Spring Boot Testing",
+    items: [
+      "Unit Testing with JUnit",
+      "Testing with Mockito",
+      "Integration Testing with MockMVC",
+      "Using ZeroCode for Testing",
+    ],
+  },
 ];
 
 type Marker = {
@@ -71,12 +236,18 @@ type Marker = {
 
 // Match project sky/cyan scheme
 const stepColor: Record<Marker["step"], string> = {
-  Basic: "#38bdf8",        // sky-400
+  Basic: "#38bdf8", // sky-400
   Intermediate: "#0ea5e9", // sky-500
-  Advanced: "#06b6d4",     // cyan-500
+  Advanced: "#06b6d4", // cyan-500
 };
 
-function generatePath(segments: number, w = 1200, segH = 400, startX = 200, topPad = 100) {
+function generatePath(
+  segments: number,
+  w = 1200,
+  segH = 400,
+  startX = 200,
+  topPad = 100,
+) {
   let d = `M ${startX} ${topPad}`;
   let x = startX;
   let y = topPad;
@@ -134,8 +305,8 @@ export default function JavaRoadmap() {
       setIsMobile(window.innerWidth < 768);
     };
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   // Generate path with responsive dimensions
@@ -177,7 +348,7 @@ export default function JavaRoadmap() {
         x: rect.width / viewBox.w,
         y: rect.height / viewBox.h,
         top: rect.top + window.scrollY,
-        left: rect.left + window.scrollX
+        left: rect.left + window.scrollX,
       });
     };
     update();
@@ -199,7 +370,7 @@ export default function JavaRoadmap() {
         id: m.id,
         x: corner.x * scale.x + scale.left,
         y: corner.y * scale.y + scale.top,
-        m
+        m,
       };
     });
   }, [markers, corners, scale]);
@@ -218,14 +389,18 @@ export default function JavaRoadmap() {
             </h1>
           </div>
           <p className="text-muted-foreground text-sm sm:text-lg max-w-2xl">
-            A comprehensive learning path from Java basics to advanced Spring Boot microservices development.
+            A comprehensive learning path from Java basics to advanced Spring
+            Boot microservices development.
           </p>
         </div>
       </div>
 
       {/* Roadmap */}
       <section className="relative mx-auto px-2 sm:px-4">
-        <div className="relative" style={{ height: `${viewBox.h * (isMobile ? 0.6 : 0.8)}px` }}>
+        <div
+          className="relative"
+          style={{ height: `${viewBox.h * (isMobile ? 0.6 : 0.8)}px` }}
+        >
           <svg
             ref={svgRef}
             className="absolute inset-0 h-full w-full"
@@ -233,9 +408,21 @@ export default function JavaRoadmap() {
             preserveAspectRatio="xMidYMid meet"
           >
             {/* Road shadow */}
-            <path d={d} stroke="#020617" strokeWidth={isMobile ? 50 : 70} fill="none" transform="translate(3, 3)" opacity={0.6} />
+            <path
+              d={d}
+              stroke="#020617"
+              strokeWidth={isMobile ? 50 : 70}
+              fill="none"
+              transform="translate(3, 3)"
+              opacity={0.6}
+            />
             {/* Road base */}
-            <path d={d} stroke="#0b1020" strokeWidth={isMobile ? 40 : 60} fill="none" />
+            <path
+              d={d}
+              stroke="#0b1020"
+              strokeWidth={isMobile ? 40 : 60}
+              fill="none"
+            />
             {/* Road edges */}
             <path d={d} stroke="#1f2937" strokeWidth={2} fill="none" />
             {/* Center dashed line - animated in sky */}
@@ -249,7 +436,7 @@ export default function JavaRoadmap() {
               strokeDashoffset={drawOffset}
               style={{
                 transition: "stroke-dashoffset 0.1s linear",
-                filter: "drop-shadow(0 0 8px rgba(56, 189, 248, 0.6))"
+                filter: "drop-shadow(0 0 8px rgba(56, 189, 248, 0.6))",
               }}
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -263,32 +450,42 @@ export default function JavaRoadmap() {
             const side = isEvenCorner ? "right" : "left";
 
             // Responsive positioning
-            const cardWidth = isMobile ? "w-[280px] max-w-[85vw]" : "w-[400px] max-w-[50vw]";
-            const cardShift = side === "left"
-              ? "-translate-x-[calc(100%+16px)] sm:-translate-x-[calc(100%+24px)]"
-              : "translate-x-4 sm:translate-x-6";
-            const align = side === "left" ? "items-end text-right" : "items-start text-left";
+            const cardWidth = isMobile
+              ? "w-[280px] max-w-[85vw]"
+              : "w-[400px] max-w-[50vw]";
+            const cardShift =
+              side === "left"
+                ? "-translate-x-[calc(100%+16px)] sm:-translate-x-[calc(100%+24px)]"
+                : "translate-x-4 sm:translate-x-6";
+            const align =
+              side === "left"
+                ? "items-end text-right"
+                : "items-start text-left";
             const pinColor = stepColor[m.step];
             const itemsText = m.items.join(", ");
 
             // Responsive positioning offset
-            const labelOffset = side === "left"
-              ? "right-10 sm:right-14"
-              : "left-10 sm:left-14";
+            const labelOffset =
+              side === "left" ? "right-10 sm:right-14" : "left-10 sm:left-14";
 
             return (
               <div
                 key={id}
                 className="group pointer-events-auto absolute z-20"
-                style={{ left: x - (isMobile ? 15 : 20), top: y - (isMobile ? 15 : 20) }}
+                style={{
+                  left: x - (isMobile ? 15 : 20),
+                  top: y - (isMobile ? 15 : 20),
+                }}
               >
                 {/* Landmark Pin */}
                 <div className="relative">
                   <div
-                    className={`${isMobile ? 'h-8 w-8' : 'h-12 w-12'} rounded-full ring-2 sm:ring-4 ring-black/50 shadow-2xl transition-transform duration-200 group-hover:scale-110`}
+                    className={`${isMobile ? "h-8 w-8" : "h-12 w-12"} rounded-full ring-2 sm:ring-4 ring-black/50 shadow-2xl transition-transform duration-200 group-hover:scale-110`}
                     style={{ backgroundColor: pinColor }}
                   >
-                    <div className={`absolute left-1/2 top-1/2 ${isMobile ? 'h-2 w-2' : 'h-3 w-3'} -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/80`} />
+                    <div
+                      className={`absolute left-1/2 top-1/2 ${isMobile ? "h-2 w-2" : "h-3 w-3"} -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/80`}
+                    />
                   </div>
 
                   {/* Step indicator and title */}
@@ -309,11 +506,14 @@ export default function JavaRoadmap() {
 
                     {/* Tooltip */}
                     <div
-                      className={`invisible absolute ${isMobile ? 'top-8' : 'top-10'} z-30 ${cardWidth} origin-top scale-95 rounded-xl border border-slate-700 bg-slate-900/95 p-3 sm:p-5 opacity-0 shadow-2xl backdrop-blur-sm transition-all duration-300 group-hover:visible group-hover:scale-100 group-hover:opacity-100 ${cardShift}`}
+                      className={`invisible absolute ${isMobile ? "top-8" : "top-10"} z-30 ${cardWidth} origin-top scale-95 rounded-xl border border-slate-700 bg-slate-900/95 p-3 sm:p-5 opacity-0 shadow-2xl backdrop-blur-sm transition-all duration-300 group-hover:visible group-hover:scale-100 group-hover:opacity-100 ${cardShift}`}
                       style={{ boxShadow: `0 0 30px rgba(56, 189, 248, 0.25)` }}
                     >
                       <div className="mb-2 flex items-center gap-2">
-                        <div className="h-2 w-2 sm:h-3 sm:w-3 rounded-full" style={{ backgroundColor: pinColor }} />
+                        <div
+                          className="h-2 w-2 sm:h-3 sm:w-3 rounded-full"
+                          style={{ backgroundColor: pinColor }}
+                        />
                         <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
                           {m.step} Level
                         </div>
@@ -337,9 +537,12 @@ export default function JavaRoadmap() {
       <div className="relative z-10 px-4 sm:px-6 py-8 sm:py-12 mt-10 sm:mt-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-muted-foreground">
-            <p className="mb-2 text-sm sm:text-base">🚀 Complete your Java development journey</p>
+            <p className="mb-2 text-sm sm:text-base">
+              🚀 Complete your Java development journey
+            </p>
             <p className="text-xs sm:text-sm">
-              Scroll up to explore each section • Hover over titles for detailed topics
+              Scroll up to explore each section • Hover over titles for detailed
+              topics
             </p>
           </div>
           <div className="mt-4 sm:mt-6">
