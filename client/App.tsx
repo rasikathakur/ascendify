@@ -15,6 +15,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Community from "./pages/Community";
 import JavaRoadmap from "./pages/roadmaps/Java";
+import AWSRoadmap from "./pages/roadmaps/AWS";
 import SiteHeader from "@/components/layout/SiteHeader";
 import SiteFooter from "@/components/layout/SiteFooter";
 import BackgroundDots from "@/components/effects/BackgroundDots";
