@@ -40,6 +40,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/roadmaps" element={<Roadmaps />} />
               <Route path="/roadmaps/java" element={<JavaRoadmap />} />
+              <Route path="/roadmaps/aws" element={<AWSRoadmap />} />
               <Route path="/assessment" element={<Assessment />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/signin" element={<SignIn />} />
